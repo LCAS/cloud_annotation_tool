@@ -1,3 +1,9 @@
+## Notices ##
+
+* Compilation error under Ubuntu 16.04 LTS Xenial: [Issue #4](https://github.com/yzrobot/cloud_annotation_tool/issues/4)
+
+* :boom: [L-CAS 3D Point Cloud Annotation Tool :two:](https://github.com/yzrobot/cloud_annotation_tool/tree/devel) is released. :boom:
+
 # L-CAS 3D Point Cloud Annotation Tool #
 
 [![Build Status](https://travis-ci.org/yzrobot/cloud_annotation_tool.svg?branch=master)](https://travis-ci.org/yzrobot/cloud_annotation_tool)
@@ -15,7 +21,9 @@ The tool provides a semi-automatic labeling function, means the 3D point cloud d
 
 ![flowchart](/images/flowchart.png)
 
-## Compiling ##
+*The quickest way to activate the optional steps is to modify the source code and recompile. :scream:*
+
+## Compiling (tested on Ubuntu 14.04/16.04) ##
 
 ### Prerequisites ###
 
@@ -23,18 +31,19 @@ The tool provides a semi-automatic labeling function, means the 3D point cloud d
 * VTK 5.x: `sudo apt-get install libvtk5-dev`
 * PCL 1.7: `sudo apt-get install libpcl-1.7-all-dev`
 
-### Build script ###
+### Build and run ###
 
 * `mkdir build`
 * `cd build`
 * `cmake ..`
 * `make`
+* `./cloud_annotation_tool`
 
-### Test examples ###
+## Test examples ##
 
 [lcas_simple_data.zip](lcas_simple_data.zip) contains 172 consecutive frames (in .pcd file) with 2 fully annotated pedestrians.
 
-### Citation ###
+## Citation ##
 
 If you are considering using this tool and the data provided, please reference the following:
 
